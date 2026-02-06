@@ -1,1 +1,233 @@
-Dichang Zhang test webpage.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dichang Zhang</title>
+  <style>
+    :root {
+      --text: #111;
+      --muted: #555;
+      --link: #1a4fff;
+      --bg: #fff;
+      --border: #e6e6e6;
+    }
+    html, body { background: var(--bg); }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.35;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap {
+      max-width: 980px;
+      padding: 32px 20px 60px;
+      margin: 0 auto;
+    }
+    .top {
+      display: grid;
+      grid-template-columns: 1fr 180px;
+      gap: 24px;
+      align-items: start;
+    }
+    .name {
+      font-size: 32px;
+      margin: 0 0 10px 0;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .intro { margin: 0 0 12px 0; color: var(--text); font-size: 16px; }
+    .links { margin: 0; color: var(--muted); font-size: 15px; }
+    .links a { margin-right: 10px; }
+    .photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #fafafa;
+    }
+    h2 {
+      margin: 28px 0 12px 0;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .subtle { color: var(--muted); }
+    .paper {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 18px;
+      padding: 14px 0;
+      border-top: 1px solid var(--border);
+    }
+    .paper:first-of-type { border-top: 0; }
+    .thumb {
+      width: 170px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #fafafa;
+    }
+    .ptitle { font-size: 16px; font-weight: 650; margin: 0 0 6px 0; }
+    .pauthors, .pvenue, .plinks, .pdesc { margin: 0; font-size: 14px; }
+    .pauthors { color: var(--text); }
+    .pvenue { color: var(--muted); margin-top: 2px; }
+    .plinks { color: var(--muted); margin-top: 6px; }
+    .plinks a { margin-right: 10px; }
+    .pdesc { color: var(--text); margin-top: 6px; }
+    .foot { margin-top: 28px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 720px) {
+      .top { grid-template-columns: 1fr; }
+      .photo { width: 140px; height: 140px; }
+      .paper { grid-template-columns: 1fr; }
+      .thumb { width: 100%; height: 160px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="top">
+      <div>
+        <p class="name">Dichang Zhang</p>
+        <p class="intro">
+          Ph.D. Candidate in Computer Science at Stony Brook University.
+          I am interested in generative  modeling for high-dimensional multi-solver simulations and multi-sensor observational data,
+          with applications in physical science.
+          :contentReference[oaicite:1]{index=1}
+        :contentReference[oaicite:2]{index=2}ks">
+          <a href="mailto:diczhang@cs.stonybrook.edu">Email</a> /
+          <a href="./assets/cv.pdf">CV</a> /
+          <a href="https://scholar.google.com/citations?user=FTlPXPAAAAAJ&hl=en">Google Scholar</a> /
+          <a href="https://github.com/zhang7dc">GitHub</a>
+        </p>
+
+        <p class="links subtle" style="margin-top:10px;">
+          Stony Brook CV Lab (advisor: Prof. Dimitris Samaras) · EPFL CV Lab (visiting; advisor: Prof. Pascal Fua) · Fouhey AI Lab (UMich)
+          :contentReference[oaicite:3]{index=3}
+      :contentReference[oaicite:4]{index=4}iv>
+        <img class="photo" src="./images/profile.jpg" alt="profile photo">
+      </div>
+    </div>
+
+    <h2>Research interests</h2>
+    <p class="intro subtle" style="margin-top:0;">
+      Generative and foundational modeling for high-dimensional simulations and observational data; multi-fidelity surrogate modeling;
+      masked pretraining and transfer learning; rare-event detection.
+      :contentReference[oaicite:5]{index=5}
+    </p>:contentReference[oaicite:6]{index=6}  <p class="intro" style="margin-top:0;">
+      Stony Brook University, Ph.D. Candidate in Computer Science (Aug 2022 – present). :contentReference[oaicite:7]{index=7}<br>
+    :contentReference[oaicite:8]{index=8}tudent in Computer and Communication Sciences (Feb 2025 – May 2025). :contentReference[oaicite:9]{index=9}<br>
+   :contentReference[oaicite:10]{index=10}nn Arbor, B.S. Data Science and Honors in Computer Science (Aug 2019 – Apr 2022). :contentReference[oaicite:11]{index=11}
+    </:contentReference[oaicite:12]{index=12}
+
+    <div class="paper">
+      <div>
+        <img class="thumb" src="./images/paper_mae_cnn_2025.png" alt="paper thumbnail">
+      </div>
+      <div>
+        <p class="ptitle">
+          Masked Pretrained CNN for Few-Shot High-Fidelity Fluid Dynamics Prediction
+        </p>
+        <p class="pauthors">
+          Dichang Zhang, Zhen Wei, Aobo Yang, Yiren Shen, Christian Santoni, Ali Khosronejad, Pascal Fua, Dimitris Samaras
+        </p>
+        <p class="pvenue">In submission, 2025 :contentReference[oaicite:13]{index=13}</p>
+  :contentReference[oaicite:14]{index=14}      <a href="REPLACE_WITH_PAPER_URL">paper</a>
+          <a href="REPLACE_WITH_CODE_URL">code</a>
+          <a href="REPLACE_WITH_PROJECT_URL">project</a>
+        </p>
+        <p class="pdesc">
+        </p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div>
+        <img class="thumb" src="./images/paper_windfarm_energies_2025.png" alt="paper thumbnail">
+      </div>
+      <div>
+        <p class="ptitle">
+          Adaptive Multitask Neural Network for High-Fidelity Wake Flow Modeling of Wind Farms
+        </p>
+        <p class="pauthors">
+          Dichang Zhang, Christian Santoni, Zexia Zhang, Dimitris Samaras, Ali Khosronejad
+        </p>
+        <p class="pvenue">Energies, 2025 :contentReference[oaicite:15]{index=15}</p>
+  :contentReference[oaicite:16]{index=16}      <a href="REPLACE_WITH_PAPER_URL">paper</a>
+          <a href="REPLACE_WITH_CODE_URL">code</a>
+        </p>
+        <p class="pdesc">
+        </p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div>
+        <img class="thumb" src="./images/paper_windfarm_icmlws_2024.png" alt="paper thumbnail">
+      </div>
+      <div>
+        <p class="ptitle">
+          Transfer Learning in Multi-fidelity Surrogate Modeling: A Wind Farm Case
+        </p>
+        <p class="pauthors">
+          Dichang Zhang, Zexia Zhang, Christian Santoni, Ali Khosronejad, Dimitris Samaras
+        </p>
+        <p class="pvenue">ICML 2024 AI4Science Workshop :contentReference[oaicite:17]{index=17}</p>
+  :contentReference[oaicite:18]{index=18}      <a href="REPLACE_WITH_PAPER_URL">paper</a>
+          <a href="REPLACE_WITH_SLIDES_URL">slides</a>
+        </p>
+        <p class="pdesc">
+        </p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div>
+        <img class="thumb" src="./images/paper_pof_2024.png" alt="paper thumbnail">
+      </div>
+      <div>
+        <p class="ptitle">
+          Toward ultra-efficient high-fidelity predictions of wind turbine wakes: Augmenting the accuracy of engineering models with machine learning
+        </p>
+        <p class="pauthors">
+          Christian Santoni, Dichang Zhang, Zexia Zhang, Dimitris Samaras, Fotis Sotiropoulos, Ali Khosronejad
+        </p>
+        <p class="pvenue">Physics of Fluids, 2024 :contentReference[oaicite:19]{index=19}</p>
+  :contentReference[oaicite:20]{index=20}      <a href="REPLACE_WITH_PAPER_URL">paper</a>
+        </p>
+        <p class="pdesc">
+        </p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div>
+        <img class="thumb" src="./images/paper_apj_2021.png" alt="paper thumbnail">
+      </div>
+      <div>
+        <p class="ptitle">
+          Fast and Accurate Emulation of the SDO/HMI Stokes Inversion with Uncertainty Quantification
+        </p>
+        <p class="pauthors">
+          Richard E. L. Higgins, David F. Fouhey, Dichang Zhang, Spiro K. Antiochos, Graham Barnes, J. Todd Hoeksema, K. D. Leka, Yang Liu, Peter W. Schuck, Tamas I. Gombosi
+        </p>
+        <p class="pvenue">The Astrophysical Journal, 2021 :contentReference[oaicite:21]{index=21}</p>
+  :contentReference[oaicite:22]{index=22}      <a href="REPLACE_WITH_PAPER_URL">paper</a>
+        </p>
+        <p class="pdesc">
+        </p>
+      </div>
+    </div>
+
+    <div class="foot">
+      Template style inspired by Jon Barron / hao-yu-wu. :contentReference[oaicite:23]{index=23}
+    </div>
+
+  </div>
+</body>
+</html>
