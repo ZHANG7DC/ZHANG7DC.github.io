@@ -11,6 +11,7 @@
       --link: #1a4fff;
       --bg: #fff;
       --border: #e6e6e6;
+      --soft: #f7f8fb;
     }
     html, body { background: var(--bg); }
     body {
@@ -36,7 +37,7 @@
       font-size: 32px;
       margin: 0 0 10px 0;
       font-weight: 700;
-      letter-spacing: 0.2px;
+      letter-spacing: 0;
     }
     .intro { margin: 0 0 12px 0; color: var(--text); font-size: 16px; }
     .links { margin: 0; color: var(--muted); font-size: 15px; }
@@ -45,7 +46,7 @@
       width: 180px;
       height: 180px;
       object-fit: cover;
-      border-radius: 12px;
+      border-radius: 8px;
       border: 1px solid var(--border);
       background: #fafafa;
     }
@@ -54,22 +55,25 @@
       font-size: 22px;
       font-weight: 700;
     }
-    .subtle { color: var(--muted); }
     .paper {
       display: grid;
-      grid-template-columns: 170px 1fr;
+      grid-template-columns: 190px 1fr;
       gap: 18px;
       padding: 14px 0;
       border-top: 1px solid var(--border);
     }
     .paper:first-of-type { border-top: 0; }
     .thumb {
-      width: 170px;
-      height: 110px;
+      width: 190px;
+      height: 120px;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: 8px;
       border: 1px solid var(--border);
       background: #fafafa;
+    }
+    .thumb.contain {
+      object-fit: contain;
+      background: var(--soft);
     }
     .ptitle { font-size: 16px; font-weight: 650; margin: 0 0 6px 0; }
     .pauthors, .pvenue, .plinks, .pdesc { margin: 0; font-size: 14px; }
@@ -78,12 +82,20 @@
     .plinks { color: var(--muted); margin-top: 6px; }
     .plinks a { margin-right: 10px; }
     .pdesc { color: var(--text); margin-top: 6px; }
+    .pub-list {
+      border-top: 1px solid var(--border);
+    }
+    .pub {
+      padding: 11px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .pub .ptitle { margin-bottom: 4px; }
     .foot { margin-top: 28px; color: var(--muted); font-size: 13px; }
     @media (max-width: 720px) {
       .top { grid-template-columns: 1fr; }
       .photo { width: 140px; height: 140px; }
       .paper { grid-template-columns: 1fr; }
-      .thumb { width: 100%; height: 160px; }
+      .thumb { width: 100%; height: auto; aspect-ratio: 16 / 10; }
     }
   </style>
 </head>
@@ -93,37 +105,50 @@
       <div>
         <p class="name">Dichang Zhang</p>
         <p class="intro">
-          I am a Ph.D. Candidate in Computer Science at 
-Stony Brook University, 
-advised by 
-<a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Prof. Dimitris Samaras</a>. 
-I have also been a visiting doctoral student at EPFL under the supervision of 
-<a href="https://people.epfl.ch/pascal.fua" target="_blank">Prof. Pascal Fua</a>. 
-Before that, I completed my B.S. in CSE at the University of Michigan under the supervision of 
-<a href="https://web.eecs.umich.edu/~fouhey/" target="_blank">Prof. David Fouhey</a>. 
-My research focuses on machine learning for high-dimensional scientific simulations and multi-sensor observational data.
+          I am a Ph.D. Candidate in Computer Science at Stony Brook University,
+          advised by <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Prof. Dimitris Samaras</a>.
+          I have also been a visiting doctoral student at EPFL under the supervision of
+          <a href="https://people.epfl.ch/pascal.fua" target="_blank">Prof. Pascal Fua</a>.
+          Before that, I completed my B.S. in Data Science and Honors Computer Science at the University of Michigan,
+          where I worked with <a href="https://web.eecs.umich.edu/~fouhey/" target="_blank">Prof. David Fouhey</a>.
+          I am currently a research intern at Futurewei Technologies. My research focuses on data-driven modeling
+          of high-dimensional phenomena in physical science.
         </p>
         <p class="links">
           <a href="mailto:diczhang@cs.stonybrook.edu">Email</a> /
-          <a href="https://raw.githubusercontent.com/ZHANG7DC/site/main/assets/cv.pdf">CV</a> /
+          <a href="assets/DCZHANG_CV_2026_1.pdf">CV</a> /
           <a href="https://scholar.google.com/citations?user=FTlPXPAAAAAJ&hl=en">Google Scholar</a> /
           <a href="https://github.com/zhang7dc">GitHub</a>
         </p>
       </div>
       <div>
-        <img class="photo" src="https://raw.githubusercontent.com/ZHANG7DC/site/main/assets/profile.jpg" alt="profile photo">
+        <img class="photo" src="assets/profile.jpg" alt="profile photo">
       </div>
     </div>
 
-    
-
-
-
-    <h2>Selected Works</h2>
+    <h2>Selected Publications</h2>
 
     <div class="paper">
       <div>
-        <img class="thumb" src="https://raw.githubusercontent.com/ZHANG7DC/site/main/assets/asbridge.jpg" alt="paper thumbnail">
+        <img class="thumb contain" src="assets/cosmio.jpg" alt="COSMIO overview figure">
+      </div>
+      <div>
+        <p class="ptitle">
+          COSMIO: A Benchmark for Cross-Survey Modality Imputation
+        </p>
+        <p class="pauthors">
+          Dichang Zhang, Yixuan Shao, Jiaxi Cui, Hanwen Yin, Yifan Liu, Jingyang Deng, Xingyu Gao, Zhiqiang Lao, Han Yu, Simon Birrer, Dimitris Samaras
+        </p>
+        <p class="pvenue">In submission, 2026</p>
+        <p class="pdesc">
+          Benchmarking cross-survey imputation across Roman, LSST, and Euclid observations for rare astronomical events.
+        </p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div>
+        <img class="thumb" src="assets/asbridge.jpg" alt="AS-Bridge overview figure">
       </div>
       <div>
         <p class="ptitle">
@@ -132,71 +157,70 @@ My research focuses on machine learning for high-dimensional scientific simulati
         <p class="pauthors">
           Dichang Zhang, Yixuan Shao, Simon Birrer, Dimitris Samaras
         </p>
-        <p class="pvenue">In submission, 2026</p>
+        <p class="pvenue">ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2026</p>
+        <p class="plinks">
+          <a href="https://arxiv.org/abs/2603.11928">Paper</a>
+          <a href="https://github.com/ZHANG7DC/AS-Bridge">Code</a>
+        </p>
       </div>
     </div>
 
-    <div class="paper">
-      <div>
-        <img class="thumb" src="https://raw.githubusercontent.com/ZHANG7DC/site/main/assets/mask_pretrained_cnn.jpg" alt="paper thumbnail">
-      </div>
-      <div>
-        <p class="ptitle">
-          Masked Pretrained CNN for Few-Shot High-Fidelity Fluid Dynamics Prediction
-        </p>
-        <p class="pauthors">
-          Dichang Zhang, Zhen Wei, Aobo Yang, Yiren Shen, Christian Santoni, Ali Khosronejad, Pascal Fua, Dimitris Samaras
-        </p>
-        <p class="pvenue">In submission, 2026</p>
-      </div>
-    </div>
+    <h2>Other Publications</h2>
 
-    <div class="paper">
-      <div>
-        <img class="thumb" src="https://raw.githubusercontent.com/ZHANG7DC/site/main/assets/paper_windfarm_energies_2025.jpg" alt="paper thumbnail">
+    <div class="pub-list">
+      <div class="pub">
+        <p class="ptitle">Deep Learning-Based Rail Surface Condition Evaluation</p>
+        <p class="pauthors">Shiyue Hu, Kaicheng Ma, Soham Das, Dichang Zhang, Dimitris Samaras</p>
+        <p class="pvenue">International Conference on Computer Vision Workshops, 2025</p>
       </div>
-      <div>
-        <p class="ptitle">
-          Adaptive Multitask Neural Network for High-Fidelity Wake Flow Modeling of Wind Farms
-        </p>
-        <p class="pauthors">
-          Dichang Zhang, Christian Santoni, Zexia Zhang, Dimitris Samaras, Ali Khosronejad
-        </p>
+      <div class="pub">
+        <p class="ptitle">Adaptive Multitask Neural Network for High-Fidelity Wake Flow Modeling of Wind Farms</p>
+        <p class="pauthors">Dichang Zhang, Christian Santoni, Zexia Zhang, Dimitris Samaras, Ali Khosronejad</p>
         <p class="pvenue">Energies, 2025</p>
       </div>
-    </div>
-    <div class="paper">
-      <div>
-        <img class="thumb" src="https://raw.githubusercontent.com/ZHANG7DC/site/main/assets/pof.png" alt="paper thumbnail">
-      </div>
-      <div>
-        <p class="ptitle">
-          Toward ultra-efficient high-fidelity predictions of wind turbine wakes: Augmenting the accuracy of engineering models with machine learning
-        </p>
-        <p class="pauthors">
-          Christian Santoni, Dichang Zhang, Zexia Zhang, Dimitris Samaras, Fotis Sotiropoulos, Ali Khosronejad
-        </p>
+      <div class="pub">
+        <p class="ptitle">Toward Ultra-Efficient High-Fidelity Predictions of Wind Turbine Wakes: Augmenting the Accuracy of Engineering Models via LES-Trained Machine Learning</p>
+        <p class="pauthors">Christian Santoni, Dichang Zhang, Zexia Zhang, Dimitris Samaras, Fotis Sotiropoulos, Ali Khosronejad</p>
         <p class="pvenue">Physics of Fluids, 2024</p>
       </div>
-    </div>
-
-    <div class="paper">
-      <div>
-        <img class="thumb" src="https://raw.githubusercontent.com/ZHANG7DC/site/main/assets/apj.png" alt="paper thumbnail">
+      <div class="pub">
+        <p class="ptitle">Transfer Learning in Multi-Fidelity Surrogate Modeling: A Wind Farm Case</p>
+        <p class="pauthors">Dichang Zhang, Zexia Zhang, Christian Santoni, Ali Khosronejad, Dimitris Samaras</p>
+        <p class="pvenue">International Conference on Machine Learning Workshops, 2024</p>
       </div>
-      <div>
-        <p class="ptitle">
-          Fast and Accurate Emulation of the SDO/HMI Stokes Inversion with Uncertainty Quantification
-        </p>
-        <p class="pauthors">
-          Richard E. L. Higgins, David F. Fouhey, Dichang Zhang, Spiro K. Antiochos, Graham Barnes, J. Todd Hoeksema, K. D. Leka, Yang Liu, Peter W. Schuck, Tamas I. Gombosi
-        </p>
+      <div class="pub">
+        <p class="ptitle">Fast and Accurate Emulation of the SDO/HMI Stokes Inversion with Uncertainty Quantification</p>
+        <p class="pauthors">Richard E. L. Higgins, David F. Fouhey, Dichang Zhang, Spiro K. Antiochos, Graham Barnes, J. Todd Hoeksema, K. D. Leka, Yang Liu, Peter W. Schuck, Tamas I. Gombosi</p>
         <p class="pvenue">The Astrophysical Journal, 2021</p>
       </div>
+      <div class="pub">
+        <p class="ptitle">Scalable One-Step Synthesis of Hydroxylated Boron Nitride Nanosheets for Obtaining Multifunctional Polyvinyl Alcohol Nanocomposite Films: Multi-Azimuth Properties Improvement</p>
+        <p class="pauthors">Wei Cai, Dichang Zhang, Bo Wang, Yuxuan Shi, Ying Pan, Jin Wang, Wen Hu, Yuan Hu</p>
+        <p class="pvenue">Composites Science and Technology, 2018</p>
+      </div>
+      <div class="pub">
+        <p class="ptitle">Construction of Hierarchical Natural Fabric Surface Structure Based on Two-Dimensional Boron Nitride Nanosheets and Its Application for Preparing Biobased Toughened Unsaturated Polyester Resin Composites</p>
+        <p class="pauthors">Feng Chu, Dichang Zhang, Yifan Hou, Shiyu Qiu, Jin Wang, Wen Hu, Lei Song</p>
+        <p class="pvenue">ACS Applied Materials & Interfaces, 2018</p>
+      </div>
+      <div class="pub">
+        <p class="ptitle">Masked Pretrained CNN for Few-Shot Fluid Super-Fidelity</p>
+        <p class="pauthors">Dichang Zhang, Zhen Wei, Aobo Yang, Yiren Shen, Dimitris Samaras, Pascal Fua</p>
+        <p class="pvenue">In submission, 2026</p>
+      </div>
+      <div class="pub">
+        <p class="ptitle">Entropogram-Guided Visual Realignment Decoding: Capturing the Rhythm of Multimodal Reasoning</p>
+        <p class="pauthors">Jingyang Deng, Zihao Fu, Yuyan Chen, Dichang Zhang, Zhen Wu, Xintao Huang, Haoyu Huo, Guangtao Xu</p>
+        <p class="pvenue">In submission, 2026</p>
+      </div>
+      <div class="pub">
+        <p class="ptitle">Diffeomorphism-Informed 3D Gaussian Splattings via Screen-Space Optimal Transport</p>
+        <p class="pauthors">Xingyu Gao, Xiaoyu Zhu, Xiong Wang, Yifan Liu, Hanwen Yin, Dichang Zhang, Yuyan Chen, Yutong Wang, Yixuan Zhou, Yunkai Guo, Weipeng Chen, Daqing Gu, Xinhua Song, Han Yu</p>
+        <p class="pvenue">In submission, 2026</p>
+      </div>
     </div>
 
-    <div class="foot">
-    </div>
+    <div class="foot"></div>
   </div>
 </body>
 </html>
