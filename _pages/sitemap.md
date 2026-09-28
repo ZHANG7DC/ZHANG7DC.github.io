@@ -7,5 +7,3 @@ permalink: /sitemap/
 - [About](/)
 - [Publications](/publications/)
 - [CV](/cv/)
-
-- [Astronomy research](/astro-surveys/)

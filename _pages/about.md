@@ -19,8 +19,6 @@ I am a Ph.D. candidate in Computer Science at Stony Brook University, advised by
 
 [Download CV](/files/Dichang_Zhang_CV.pdf) · [Full publication list](/publications/)
 
-[Explore our 2026 astronomy research](/astro-surveys/) — cross-survey generation, modality imputation, and galaxy morphology.
-
 <h2 id="publications">Selected Publications</h2>
 {% include publication-list.html selected=true %}
 
