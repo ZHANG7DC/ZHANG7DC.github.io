@@ -7,3 +7,7 @@
 .publication-venue { font-style: italic; }
 .cv-publications li { margin-bottom: 1em; }
 @media (max-width: 650px) { .publication-with-image { grid-template-columns: 1fr; } .publication-image { width: 230px; max-width:100%; } }
+
+/* Keep the template footer below the document, including on small screens. */
+.page__footer { position: static; }
+body { padding-bottom: 0; margin-bottom: 0 !important; }
