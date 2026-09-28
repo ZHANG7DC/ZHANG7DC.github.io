@@ -1,0 +1,9 @@
+
+.publication-entry { margin: 1.6em 0; padding-bottom: 1.6em; border-bottom: 1px solid var(--global-border-color); }
+.publication-with-image { display: grid; grid-template-columns: 180px minmax(0,1fr); gap: 22px; align-items: start; }
+.publication-image { width: 180px; max-height: 150px; object-fit: contain; }
+.publication-entry h3 { margin: 0 0 .45em; font-size: 1em; }
+.page__content .publication-entry p { margin: .35em 0; font-size: .82em; }
+.publication-venue { font-style: italic; }
+.cv-publications li { margin-bottom: 1em; }
+@media (max-width: 650px) { .publication-with-image { grid-template-columns: 1fr; } .publication-image { width: 230px; max-width:100%; } }

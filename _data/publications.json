@@ -1,0 +1,120 @@
+[
+  {
+    "title": "COSMIO: A Benchmark for Cross-Survey Modality Imputation",
+    "authors": "<strong>Dichang Zhang</strong>, Yixuan Shao, Jiali Cui, Haotian Yin, Yuanpeng Liu, Jiaqi Deng, Xiang Gao, Zhiqiang Lao, Heather Yu, Simon Birrer, Dimitris Samaras",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS), 2026. Accepted for publication.",
+    "selected": true,
+    "image": "/assets/cosmio.jpg",
+    "alt": "COSMIO cross-survey modality imputation benchmark overview",
+    "links": []
+  },
+  {
+    "title": "Diffeomorphism-Informed 3D Gaussian Splattings via Screen-Space Optimal Transport (OT)",
+    "authors": "Xiang Gao, Xiaoping Zhu, Xinmu Wang, Yuanpeng Liu, Haotian Yin, <strong>Dichang Zhang</strong>, Yazheng Chen, Yue Wang, Yubin Zhou, Yu Guo, Wei Chen, David Gu, Xinyu Song, Heather Yu",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS), 2026. Accepted for publication.",
+    "selected": false,
+    "links": []
+  },
+  {
+    "title": "A General-Purpose VLM Can Teach an Astronomy Foundation Model to Better Recognize Galaxy Morphology",
+    "authors": "<strong>Dichang Zhang</strong>, Jiaqi Deng, Yixuan Shao, Yuanpeng Liu, Jiali Cui, Zhiqiang Lao, Heather Yu, Liang Peng, Simon Birrer, Dimitris Samaras",
+    "venue": "arXiv:2608.02300 [cs.CV], 2026.",
+    "selected": true,
+    "image": "/assets/vlm-galaxy-teaser.webp",
+    "alt": "Overview of the VLM distillation, sample selection, and test-time prior correction framework",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2608.02300"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/fw-ic/VLM-morphology-teacher"
+      }
+    ]
+  },
+  {
+    "title": "AS-Bridge: A Bidirectional Generative Framework Bridging Next-Generation Astronomical Surveys",
+    "authors": "<strong>Dichang Zhang</strong>, Yixuan Shao, Simon Birrer, Dimitris Samaras",
+    "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2026.",
+    "selected": true,
+    "image": "/assets/asbridge.jpg",
+    "alt": "AS-Bridge framework overview",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2603.11928"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/ZHANG7DC/AS-Bridge"
+      }
+    ]
+  },
+  {
+    "title": "Deep Learning-Based Rail Surface Condition Evaluation",
+    "authors": "Shilin Hu, Ke Ma, Sagnik Das, <strong>Dichang Zhang</strong>, Dimitris Samaras",
+    "venue": "International Conference on Computer Vision (ICCV) Workshops, 2025.",
+    "selected": false,
+    "links": []
+  },
+  {
+    "title": "Adaptive Multitask Neural Network for High-Fidelity Wake Flow Modeling of Wind Farms",
+    "authors": "<strong>Dichang Zhang</strong>, Christian Santoni, Zexia Zhang, Dimitris Samaras, Ali Khosronejad",
+    "venue": "Energies, 2025.",
+    "selected": false,
+    "links": []
+  },
+  {
+    "title": "Toward Ultra-Efficient High-Fidelity Predictions of Wind Turbine Wakes: Augmenting the Accuracy of Engineering Models via LES-Trained Machine Learning",
+    "authors": "Christian Santoni, <strong>Dichang Zhang</strong>, Zexia Zhang, Dimitris Samaras, Fotis Sotiropoulos, Ali Khosronejad",
+    "venue": "Physics of Fluids, 2024.",
+    "selected": false,
+    "links": []
+  },
+  {
+    "title": "Transfer Learning in Multi-Fidelity Surrogate Modeling: A Wind Farm Case",
+    "authors": "<strong>Dichang Zhang</strong>, Zexia Zhang, Christian Santoni, Ali Khosronejad, Dimitris Samaras",
+    "venue": "International Conference on Machine Learning (ICML) Workshops, 2024.",
+    "selected": false,
+    "links": []
+  },
+  {
+    "title": "Fast and Accurate Emulation of the SDO/HMI Stokes Inversion with Uncertainty Quantification",
+    "authors": "Richard E. L. Higgins, David F. Fouhey, <strong>Dichang Zhang</strong>, Spiro K. Antiochos, Graham Barnes, J. Todd Hoeksema, K. D. Leka, Yang Liu, Peter W. Schuck, Tamas I. Gombosi",
+    "venue": "The Astrophysical Journal, 2021.",
+    "selected": true,
+    "image": "/assets/apj.png",
+    "alt": "Comparison of HMI Stokes inversion reference and model predictions",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2103.17273"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/relh/FAE-HMI-SI"
+      }
+    ]
+  },
+  {
+    "title": "Construction of Multifunctional Boron Nitride Nanosheet Towards Reducing Toxic Volatiles (CO and HCN) Generation and Fire Hazard of Thermoplastic Polyurethane",
+    "authors": "Junling Wang, <strong>Dichang Zhang</strong>, Yan Zhang, Wei Cai, Congxue Yao, Yuan Hu, Weizhao Hu",
+    "venue": "Journal of Hazardous Materials, 362:482–494, 2019.",
+    "selected": false
+  },
+  {
+    "title": "Scalable One-Step Synthesis of Hydroxylated Boron Nitride Nanosheets for Obtaining Multifunctional Polyvinyl Alcohol Nanocomposite Films: Multi-Azimuth Properties Improvement",
+    "authors": "Wei Cai, <strong>Dichang Zhang</strong>, Bo Wang, Yuxuan Shi, Ying Pan, Jin Wang, Wen Hu, Yuan Hu",
+    "venue": "Composites Science and Technology, 2018.",
+    "selected": false,
+    "links": []
+  },
+  {
+    "title": "Construction of Hierarchical Natural Fabric Surface Structure Based on Two-Dimensional Boron Nitride Nanosheets and Its Application for Preparing Biobased Toughened Unsaturated Polyester Resin Composites",
+    "authors": "Feng Chu, <strong>Dichang Zhang</strong>, Yifan Hou, Shiyu Qiu, Jin Wang, Wen Hu, Lei Song",
+    "venue": "ACS Applied Materials &amp; Interfaces, 2018.",
+    "selected": false,
+    "links": []
+  }
+]
