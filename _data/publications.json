@@ -6,7 +6,16 @@
     "selected": true,
     "image": "/assets/cosmio.jpg",
     "alt": "COSMIO cross-survey modality imputation benchmark overview",
-    "links": []
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2611.04139"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/fw-ic/COSMIO"
+      }
+    ]
   },
   {
     "title": "Diffeomorphism-Informed 3D Gaussian Splattings via Screen-Space Optimal Transport (OT)",
