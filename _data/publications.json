@@ -1,5 +1,23 @@
 [
   {
+    "title": "A General-Purpose VLM Can Teach an Astronomy Foundation Model to Better Recognize Galaxy Morphology",
+    "authors": "<strong>Dichang Zhang</strong>, Jiaqi Deng, Yixuan Shao, Yuanpeng Liu, Jiali Cui, Zhiqiang Lao, Heather Yu, Liang Peng, Simon Birrer, Dimitris Samaras",
+    "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2027. Accepted for publication.",
+    "selected": true,
+    "image": "/assets/vlm-galaxy-teaser.webp",
+    "alt": "Overview of the VLM distillation, sample selection, and test-time prior correction framework",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2608.02300"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/fw-ic/VLM-morphology-teacher"
+      }
+    ]
+  },
+  {
     "title": "COSMIO: A Benchmark for Cross-Survey Modality Imputation",
     "authors": "<strong>Dichang Zhang</strong>, Yixuan Shao, Jiali Cui, Haotian Yin, Yuanpeng Liu, Jiaqi Deng, Xiang Gao, Zhiqiang Lao, Heather Yu, Simon Birrer, Dimitris Samaras",
     "venue": "Advances in Neural Information Processing Systems (NeurIPS), 2026. Accepted for publication.",
@@ -23,24 +41,6 @@
     "venue": "Advances in Neural Information Processing Systems (NeurIPS), 2026. Accepted for publication.",
     "selected": false,
     "links": []
-  },
-  {
-    "title": "A General-Purpose VLM Can Teach an Astronomy Foundation Model to Better Recognize Galaxy Morphology",
-    "authors": "<strong>Dichang Zhang</strong>, Jiaqi Deng, Yixuan Shao, Yuanpeng Liu, Jiali Cui, Zhiqiang Lao, Heather Yu, Liang Peng, Simon Birrer, Dimitris Samaras",
-    "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2027. Accepted for publication.",
-    "selected": true,
-    "image": "/assets/vlm-galaxy-teaser.webp",
-    "alt": "Overview of the VLM distillation, sample selection, and test-time prior correction framework",
-    "links": [
-      {
-        "label": "Paper",
-        "url": "https://arxiv.org/abs/2608.02300"
-      },
-      {
-        "label": "Code",
-        "url": "https://github.com/fw-ic/VLM-morphology-teacher"
-      }
-    ]
   },
   {
     "title": "AS-Bridge: A Bidirectional Generative Framework Bridging Next-Generation Astronomical Surveys",
