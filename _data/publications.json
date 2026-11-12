@@ -27,7 +27,7 @@
   {
     "title": "A General-Purpose VLM Can Teach an Astronomy Foundation Model to Better Recognize Galaxy Morphology",
     "authors": "<strong>Dichang Zhang</strong>, Jiaqi Deng, Yixuan Shao, Yuanpeng Liu, Jiali Cui, Zhiqiang Lao, Heather Yu, Liang Peng, Simon Birrer, Dimitris Samaras",
-    "venue": "arXiv:2608.02300 [cs.CV], 2026.",
+    "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2027. Accepted for publication.",
     "selected": true,
     "image": "/assets/vlm-galaxy-teaser.webp",
     "alt": "Overview of the VLM distillation, sample selection, and test-time prior correction framework",
