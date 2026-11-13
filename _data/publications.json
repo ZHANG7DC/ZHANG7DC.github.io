@@ -19,7 +19,7 @@
   },
   {
     "title": "COSMIO: A Benchmark for Cross-Survey Modality Imputation",
-    "authors": "<strong>Dichang Zhang</strong>, Yixuan Shao, Jiali Cui, Haotian Yin, Yuanpeng Liu, Jiaqi Deng, Xiang Gao, Zhiqiang Lao, Heather Yu, Simon Birrer, Dimitris Samaras",
+    "authors": "<strong>Dichang Zhang</strong>, Yixuan Shao, Jiaqi Deng, Jiali Cui, Haotian Yin, Yuanpeng Liu, Xiang Gao, Zhiqiang Lao, Heather Yu, Simon Birrer, Dimitris Samaras",
     "venue": "Advances in Neural Information Processing Systems (NeurIPS), 2026. Accepted for publication.",
     "selected": true,
     "image": "/assets/cosmio.jpg",
